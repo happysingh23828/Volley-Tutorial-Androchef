@@ -5,12 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".normalvolleycall.MainActivity">
 
     <Button
+        android:id="@+id/btn_load_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Load list using Volley"
+        android:text="@string/load_list_using_volley"
         android:layout_gravity="center"
         android:gravity="center"
         android:background="@color/colorPrimary"
@@ -18,11 +19,14 @@
         android:textColor="@android:color/white" />
 
     <ProgressBar
+        android:id="@+id/progress_bar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:visibility="gone"
         android:layout_gravity="center"/>
 
     <android.support.v7.widget.RecyclerView
+        android:id="@+id/flag_list_recyclerView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
